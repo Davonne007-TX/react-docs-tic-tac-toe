@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Square() {
-  const [value, setValue] = useState(null);
+  const [value, setValue] = useState(null); //each square has its own state
 
   const handleClick = () => {
     setValue("X");
