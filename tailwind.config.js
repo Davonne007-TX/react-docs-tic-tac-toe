@@ -8,7 +8,7 @@ export default {
         titan: "'Titan One', sans-serif",
       },
       colors: {
-        candy: "#ff00aa",
+        myTeal: "#00CAB1",
       },
     },
   },
