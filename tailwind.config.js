@@ -5,6 +5,10 @@ export default {
     extend: {
       fontFamily: {
         mon: "'Montserrat Alternates', sans-serif",
+        titan: "'Titan One', sans-serif",
+      },
+      colors: {
+        candy: "#ff00aa",
       },
     },
   },

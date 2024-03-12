@@ -11,7 +11,7 @@ export default function Square() {
     <>
       <section className="bg-white">
         <button
-          className="border-4 border-green-500 text-black p-4 w-32 h-32 font-serif text-2xl"
+          className="border-4 border-black p-4 w-32 h-32 font-titan text-5xl text-candy"
           onClick={handleClick}
         >
           {value}
