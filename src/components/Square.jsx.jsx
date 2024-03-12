@@ -3,7 +3,7 @@ export default function Square({ value, onSquareClick }) {
     <>
       <section className="bg-white">
         <button
-          className="border-2 border-black p-4 w-32 h-32 font-titan text-5xl text-myTeal"
+          className="border-2 border-black p-4 w-32 h-32 font-titan text-5xl text-pink-400"
           onClick={onSquareClick}
         >
           {value}

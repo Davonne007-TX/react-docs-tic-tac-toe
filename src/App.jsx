@@ -5,17 +5,27 @@ import Square from "./components/Square.jsx";
 
 function App() {
   const [squares, setSquares] = useState(Array(9).fill(null));
+  const [xIsNext, setXisNext] = useState(true);
 
   const handleClick = (i) => {
+    if (squares[i]) {
+      return;
+    }
+
     const nextSquares = squares.slice();
-    nextSquares[i] = "X";
+    if (xIsNext) {
+      nextSquares[i] = "X";
+    } else {
+      nextSquares[i] = "O";
+    }
     setSquares(nextSquares);
+    setXisNext(!xIsNext);
   };
 
   return (
     <>
-      <main className=" flex flex-col h-screen justify-center items-center bg-cover bg-[url('/images/skee-ball.jpg')]">
-        <h1 className="text-myTeal text-center text-5xl lg:text-6xl font-titan font-bold absolute bottom-3/4 top-20 lg:top-30 underline">
+      <main className=" flex flex-col h-screen justify-center items-center bg-cover bg-[url('/images/finished.jpg')]">
+        <h1 className="text-white text-center text-5xl lg:text-6xl font-titan font-bold absolute bottom-3/4 top-20 lg:top-30 underline">
           Tik-Tac-Toe
         </h1>
 
