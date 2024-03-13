@@ -35,7 +35,7 @@ function App() {
     status = "Winner: " + winner;
     console.log("Winner:", winner);
   } else if (!squares.includes(null)) {
-    status = "Tie Game! Start a new game";
+    status = "Tie! Start a new game";
   } else {
     status = "Player Up: " + (xIsNext ? "X" : "O");
   }
