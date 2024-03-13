@@ -50,7 +50,7 @@ function App() {
   return (
     <>
       <main className=" flex flex-col h-screen justify-center items-center bg-contain  bg-green-500">
-        <h1 className="text-white text-center text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-titan font-bold absolute top-20 lg:top-30 underline">
+        <h1 className="text-white animate-pulse text-center text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-titan font-bold absolute top-20 lg:top-30 underline">
           Tik-Tac-Toe
         </h1>
 
