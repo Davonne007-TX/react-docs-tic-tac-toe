@@ -21,17 +21,26 @@ function App() {
     }
     setSquares(nextSquares);
     setXisNext(!xIsNext);
+
+    if (!nextSquares.includes(null) && !calculateWinner(nextSquares)) {
+      alert("It's a tie, Start New Game!");
+      console.log("Tie Game!");
+    }
   };
 
+  //winner
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
     status = "Winner: " + winner;
     console.log("Winner:", winner);
+  } else if (!squares.includes(null)) {
+    status = "Tie Game! Please start a new game";
   } else {
     status = "Player Up: " + (xIsNext ? "X" : "O");
   }
 
+  //new game
   const startNewGame = () => {
     setSquares(Array(9).fill(null));
     setXisNext(true);
@@ -40,13 +49,13 @@ function App() {
 
   return (
     <>
-      <main className=" flex flex-col h-screen justify-center items-center bg-cover bg-[url('/images/finished.jpg')]">
+      <main className=" flex flex-col h-screen justify-center items-center bg-contain  bg-[url('/images/matrix.jpg')]">
         <h1 className="text-white text-center text-5xl lg:text-6xl font-titan font-bold absolute bottom-3/4 top-20 lg:top-30 underline">
           Tik-Tac-Toe
         </h1>
 
         <section>
-          <div className="bg-pink-400 mb-10 p-2 font-titan text-white rounded-xl text-center text-xl">
+          <div className="bg-green-500 mb-10 p-2 font-titan text-white rounded-xl text-center text-xl">
             {status}
           </div>
           <div className="flex flex-row">
@@ -93,7 +102,7 @@ const calculateWinner = (squares) => {
     [3, 4, 5],
     [6, 7, 8],
     [0, 3, 6],
-    [1, 4, 8],
+    [1, 4, 7],
     [0, 3, 6],
     [1, 4, 7],
     [2, 5, 8],
