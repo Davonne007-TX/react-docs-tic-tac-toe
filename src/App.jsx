@@ -49,13 +49,13 @@ function App() {
 
   return (
     <>
-      <main className=" flex flex-col h-screen justify-center items-center bg-contain  bg-[url('/images/matrix.jpg')]">
-        <h1 className="text-white text-center text-5xl lg:text-6xl font-titan font-bold absolute bottom-3/4 top-20 lg:top-30 underline">
+      <main className=" flex flex-col h-screen justify-center items-center bg-contain  bg-green-500">
+        <h1 className="text-white text-center text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-titan font-bold absolute top-20 lg:top-30 underline">
           Tik-Tac-Toe
         </h1>
 
         <section>
-          <div className="bg-green-500 mb-10 p-2 font-titan text-white rounded-xl text-center text-xl">
+          <div className="bg-white mt-20 md:mt-5 lg:mt-5 mb-10 lg:mb-10 p-2 font-titan text-green-500 rounded-xl text-center text-xl">
             {status}
           </div>
           <div className="flex flex-row">
