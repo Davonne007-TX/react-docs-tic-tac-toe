@@ -33,7 +33,6 @@ function App() {
   let status;
   if (winner) {
     status = "Winner: " + winner;
-    alert(winner + ", Wins!");
     console.log("Winner:", winner);
   } else if (!squares.includes(null)) {
     status = "Tie! Start a new game";
