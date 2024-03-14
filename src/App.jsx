@@ -23,7 +23,6 @@ function App() {
     setXisNext(!xIsNext);
 
     if (!nextSquares.includes(null) && !calculateWinner(nextSquares)) {
-      alert("TIE GAME!");
       console.log("Tie Game!");
     }
   };
