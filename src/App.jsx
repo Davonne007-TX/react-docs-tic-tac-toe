@@ -48,13 +48,13 @@ function App() {
 
   return (
     <>
-      <main className=" flex flex-col h-screen justify-center items-center bg-contain  bg-green-500">
+      <main className=" flex flex-col h-screen justify-center items-center bg-contain  bg-pink-400">
         <h1 className="text-white animate-pulse text-center text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-titan font-bold absolute top-20 lg:top-30 underline">
           Tik-Tac-Toe
         </h1>
 
         <section>
-          <div className="bg-white mt-20 md:mt-5 lg:mt-5 mb-10 lg:mb-10 p-2 font-titan text-green-500 rounded-xl text-center text-xl">
+          <div className="bg-white mt-20 md:mt-5 lg:mt-5 mb-10 lg:mb-10 p-2 font-titan text-pink-400 rounded-xl text-center text-xl">
             {status}
           </div>
           <div className="flex flex-row">
